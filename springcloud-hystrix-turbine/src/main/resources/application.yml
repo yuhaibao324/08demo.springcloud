@@ -14,6 +14,7 @@ eureka:
     lease-renewal-interval-in-seconds: 30
     lease-expiration-duration-in-seconds: 90
 turbine:
-  app-config: springcloud-hystrix-dashboard # 指定了需要收集监控信息的服务名
+  000222i哦怕、’|“pp-config-list: springcloud-hystrix-dashboard,sprin
+  gcloud-producer-config-rest # 指定了需要收集监控信息的服务名
   cluster-name-expression: new String('default')  # 指定集群名称
   combine-host-port: true # 设置为true，可以让同一主机上的服务通过主机名与端口号的组合来进行区分，

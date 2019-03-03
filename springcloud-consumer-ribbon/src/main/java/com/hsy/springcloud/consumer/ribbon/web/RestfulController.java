@@ -30,6 +30,7 @@ public class RestfulController {
 
     @RequestMapping("/getMessage")
     public String getMessage(){
+        System.out.println("getMessage is ok.");
         return "I am info from port("+port+") from application name("+name+") invoke other service." + "\n"
                 +restfulService.getRestData();
     }

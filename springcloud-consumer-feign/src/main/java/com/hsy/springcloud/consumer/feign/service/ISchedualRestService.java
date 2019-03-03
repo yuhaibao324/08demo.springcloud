@@ -11,10 +11,14 @@ import org.springframework.web.bind.annotation.GetMapping;
  * Copyright (c) 2017 shiyuan4work@sina.com All rights reserved.
  * @price ¥5    微信：hewei1109
  */
-@FeignClient(name = "springcloud-producer-rest",
-        fallback = ISchedualRestServiceFallback.class)
+//@FeignClient(name = "springcloud-producer-rest", fallback = ISchedualRestServiceFallback.class)
+@FeignClient(value = "springcloud-producer-rest",fallback = SchedualRestServiceHystrix.class)
 public interface ISchedualRestService {
 
-    @GetMapping("/api/rest/crm/user/v1/login")
+    //@GetMapping("/api/rest/crm/user/v1/login")
+    //String infos1() ;
+
+    @GetMapping("/api/rest/info")
     String infos() ;
+
 }

@@ -48,7 +48,7 @@ public class AccessFilter extends ZuulFilter {
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(401);
         }else{
-            _logger.info("access token is ok!!!");
+            _logger.info("access token is ok!!!" + token);
         }
         return null;
     }

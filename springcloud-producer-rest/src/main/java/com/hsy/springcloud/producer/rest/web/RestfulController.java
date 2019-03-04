@@ -31,4 +31,10 @@ public class RestfulController {
         System.out.println("get info is ok.");
         return "I am info from port("+port+") from application name("+name+")" ;
     }
+
+    @GetMapping(value = "/getMessage")
+    public String getMessage(){
+        System.out.println("get info is ok.");
+        return "I am info from port("+port+") from application name("+name+")" ;
+    }
 }

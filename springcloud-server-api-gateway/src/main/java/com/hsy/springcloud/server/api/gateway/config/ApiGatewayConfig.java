@@ -14,16 +14,16 @@ import org.springframework.context.annotation.Configuration;
  * Copyright (c) 2017 shiyuan4work@sina.com All rights reserved.
  * @price ¥5    微信：hewei1109
  */
-//@Configuration
+@Configuration
 public class ApiGatewayConfig {
 
-    /*@Bean
+    @Bean
     public AccessFilter accessFilter(){
         return new AccessFilter();
-    }*/
+    }
 
-    /*@Bean
+    @Bean
     public ErrorFilter errorFilter(){
         return new ErrorFilter();
-    }*/
+    }
 }

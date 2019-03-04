@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 9999
   ssl:
     key-store: classpath:keystore.p12
     key-store-password: 123456
@@ -11,7 +11,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8000/eureka/
+      defaultZone: http://localhost:8080/eureka/
 
 zuul:
   routes:
@@ -24,3 +24,16 @@ zuul:
     api-crm:
       path: /crm/**
       serviceId: crm-server
+    api-a:
+      path: /api-a/**
+      serviceId:  springcloud-consumer-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId:  springcloud-consumer-feign
+    api-c:
+      path: /api-c/**
+      serviceId: springcloud-producer-rest
+    api-d:
+      path: /api-d/**
+      serviceId: springcloud-server-bus-rabbitmq
+

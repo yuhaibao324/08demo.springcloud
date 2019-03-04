@@ -20,10 +20,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/api/rest")
 public class RestfulController {
 
+
     @Autowired
     Prodecer prodecer ;
+
     @GetMapping("/message")
     public void message(){
         prodecer.send();
     }
+
+    @GetMapping("/getMessage")
+    public void getMessage(){
+        prodecer.send();
+    }
+
+
 }

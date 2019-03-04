@@ -1,8 +1,16 @@
 spring:
   rabbitmq:
-    host: 192.168.175.128
+    host: 192.168.22.145
     port: 5672
-    username: admin
-    password: admin
+    username: guest
+    password: guest
   application:
     name: springcloud-server-bus-rabbitmq
+
+server:
+  port: 9998
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/

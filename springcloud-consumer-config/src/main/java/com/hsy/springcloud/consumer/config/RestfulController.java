@@ -25,7 +25,7 @@ public class RestfulController {
     @HystrixCommand(fallbackMethod = "processHystrix_Get")
     public String getName() {
         System.out.println("name-->age===========>ok");
-        return name + ":" + age;
+        return name + "---:" + age;
     }
 
     public String processHystrix_Get() {

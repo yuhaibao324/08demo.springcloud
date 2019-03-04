@@ -10,7 +10,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/shiyuan2he/springcloud
+          uri: https://github.com/yuhaibao324/08demo.springcloud
           search-paths: springcloud-repo-config
           username:
           password:
